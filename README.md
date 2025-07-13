@@ -1,4 +1,7 @@
-🧭 Kanban TaskBoard
+🧭 Kanban TaskBoard 
+
+Deployment URL: https://kanbanboard-five-zeta.vercel.app/
+
 A sleek and responsive task management dashboard built with React, Express, and MongoDB, featuring drag-and-drop organization, persistent dark mode, editable task columns, and secure JWT-based authentication.
 🚀 Features
 🎯 Drag-and-drop task cards across customizable columns
@@ -25,7 +28,7 @@ React Toastify	REST API
 
 📦 Setup Instructions
 🔧 Backend
-Clone the repo and navigate to /server
+Clone the repo and navigate to /kanban-server
 
 Run npm install
 
@@ -37,7 +40,7 @@ JWT_SECRET=<your_jwt_secret>
 Run with npm start or nodemon
 
 🌐 Frontend
-Navigate to /client
+Navigate to /kanban-board
 
 Run npm install
 
@@ -45,16 +48,9 @@ Start with npm run dev (or npm start if configured)
 
 📁 Folder Structure
 bash
-client/
-├── src/
-│   ├── pages/          # Dashboard, Login, Register
-│   ├── components/     # Column, TaskCard, Modals
-│   └── utils/          # API endpoints, helpers
-server/
-├── routes/             # tasks.js, columns.js, auth.js
-├── models/             # Task, Column, User
-├── middleware/         # auth middleware
-└── app.js              # Server setup
+kanban-board src pages - Dashboard - Login - Register, components - Column - TaskCard - Modals utils - API endpoints - helpers
+
+kanban-server routes - tasks.js - columns.js - auth.js, models - Task - Column - User middleware - auth middleware app.js
 
 🛡️ Authentication
 User login stored in localStorage via JWT
